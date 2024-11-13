@@ -11,3 +11,6 @@ https://github.com/GSeanCDAT/GIMM-VFI
 
 
 
+### model download
+*.ComfyUI-GIMM-VFI/twins_models/hub/checkpoints:https://huggingface.co/wang1111magic/ComfyUI-GIMM-VFI-models
+*.models/interpolation/ :https://huggingface.co/Kijai/GIMM-VFI_safetensors

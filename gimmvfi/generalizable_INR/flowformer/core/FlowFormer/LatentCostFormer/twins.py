@@ -25,6 +25,15 @@ from timm.models.vision_transformer import Attention
 from timm.models.helpers import build_model_with_cfg#, overlay_external_default_cfg
 from .attention import MultiHeadAttention, LinearPositionEmbeddingSine
 from ...utils.utils import coords_grid, bilinear_sampler, upflow8
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+torch_home_tmp_dir = os.path.join(current_dir, '../../../../../../twins_models')
+torch_home_tmp_dir = os.path.abspath(torch_home_tmp_dir)  
+
+# 设置 TORCH_HOME 环境变量
+os.environ['TORCH_HOME'] = torch_home_tmp_dir
+print(f'Set TORCH_HOME to {os.environ["TORCH_HOME"]} temporarily.')
 
 
 def _cfg(url="", **kwargs):
