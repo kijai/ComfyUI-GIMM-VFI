@@ -7,4 +7,5 @@ master_ip
 logs/
 *.DS_Store
 .idea
-models/
+twins_models/*
+!.gitignore
