@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-gimm-vfi"
+description = "ComfyUI nodes to use GIMM-VFI frame interpolation"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["opencv-python", "numpy", "pillow", "cupy-cuda12x>=13.3.0", "timm", "omegaconf", "yacs", "loguru", "easydict"]
+
+[project.urls]
+Repository = "https://github.com/kijai/ComfyUI-GIMM-VFI"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-GIMM-VFI"
+Icon = ""
